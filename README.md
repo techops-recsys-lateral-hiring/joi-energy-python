@@ -150,17 +150,20 @@ GET
 
 
 ```console
-$ python3.7 -m pip install "connexion[swagger-ui]" Flask pytest
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ pip install -r test_requirements.txt
 ```
 
 ## Test
 
 ```console
-$ python3.7 -m pytest
+$ pytest
 ```
 
 ## Run
 
 ```console
-$ python3.7 src/app.py # available at http://localhost:5000/ui/ by default
+$ python src/app.py # available at http://localhost:5000/ui/ by default
 ```
